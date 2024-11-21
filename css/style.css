@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #ececec;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #004217;
+
+    nav {
+        width: 1280px;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            color: #fafafa;
+            font-size: 28px;
+            font-family: "Orbitron";
+            font-weight: 700;
+        }
+
+        .menu {
+            display: flex;
+            gap: 16px;
+
+            a {
+                font-family: "Orbitron";
+                color: #fafafa;
+                text-decoration: none;
+
+                &:hover {
+                    color: gold;
+                }
+            }
+        }
+    }
+}
+
+main {}
+
+#hero {
+    .imagemHero {}
+
+    .textoHero {}
+}
+
+#recursos {
+    h2 {}
+
+    ul {
+        li {
+            .featIMG {}
+
+            .desc {}
+        }
+    }
+}
+
+#provaSocial {
+    h2 {}
+
+    ul {
+        li {
+            .foto {}
+
+            .depo {
+                h4 {}
+
+                p {}
+            }
+        }
+    }
+}
+
+#cta {
+    .container {
+        .ctaTexto {
+            h2 {}
+
+            p {}
+        }
+
+        .cta {
+            input {}
+        }
+    }
+}
+
+.btnCTA {}
+
+footer {
+    p {}
+}
