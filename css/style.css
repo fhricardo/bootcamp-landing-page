@@ -113,18 +113,129 @@ main {
 }
 
 #recursos {
-    h2 {}
+    width: 100%;
+    padding: 64px 0;
+
+    h2 {
+        width: 1280px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
     ul {
-        li {
-            .featIMG {}
+        width: 960px;
+        margin: 32px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
 
-            .desc {}
+        li {
+            width: 100%;
+            display: flex;
+            padding: 16px;
+            gap: 16px;
+            background-color: #46464620;
+            border-radius: 16px;
+
+            .featIMG {
+                width: 240px;
+            }
+
+            .desc {
+                width: calc(100% - 256px);
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+            }
         }
     }
 }
 
+#sobre {
+    width: 100%;
+    background-color: #210068;
+    padding: 64px 0;
+
+    h1 {
+        width: 1280px;
+        margin: 0 auto 16px auto;
+        text-align: center;
+        color: #fafafa;
+    }
+
+    p {
+        width: 1280px;
+        margin: 16px auto;
+        color: #fafafa;
+    }
+
+    ul {
+        width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: 240px;
+            height: 500px;
+            padding: 16px;
+            list-style-type: none;
+            border-radius: 120px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            transition: .5s;
+
+            .foto {
+                width: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .desc {
+                text-align: center;
+                color: #fafafa;
+
+                h4 {}
+
+                h5 {}
+
+                p {
+                    display: none;
+                    width: 100%;
+                }
+
+
+            }
+
+            &:hover {
+                transition: .5s;
+                background-color: #fafafa40;
+
+                .desc {
+                    p {
+                        display: block;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
 #provaSocial {
+
+
     h2 {}
 
     ul {
