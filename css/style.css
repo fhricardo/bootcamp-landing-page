@@ -22,7 +22,7 @@ body {
 header {
     width: 100%;
     height: 80px;
-    background-color: #004217;
+    background-color: #210068;
 
     nav {
         width: 1280px;
@@ -56,12 +56,60 @@ header {
     }
 }
 
-main {}
+main {
+    width: 100%;
+}
 
 #hero {
-    .imagemHero {}
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+    position: relative;
 
-    .textoHero {}
+    .imagemHero {
+        width: 100%;
+        height: 600px;
+        background-image: url(../assets/hero-bg.webp);
+        background-size: cover;
+        background-position: center;
+        mask-image: url(../assets/mask.gif);
+        mask-size: cover;
+        mask-position: center;
+    }
+
+    .textoHero {
+        width: 600px;
+        height: 300px;
+        background-color: #fafafa40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -300px;
+        padding: 32px;
+        border-radius: 16px;
+        backdrop-filter: blur(4px);
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: #fafafa;
+        }
+
+        p {
+            text-align: center;
+            font-size: 22px;
+            color: #fafafa;
+            font-weight: 300;
+            text-shadow: 0px 0px 4px #464646;
+        }
+    }
 }
 
 #recursos {
